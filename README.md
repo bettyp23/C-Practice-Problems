@@ -3,9 +3,17 @@ Welcome to my C++ coding problems repository! Here, you'll find a collection of 
 The primary purpose of this repository is to provide a platform for practicing and demonstrating C++ programming skills. By solving coding problems and sharing the solutions on GitHub, I aim to:
 
 Showcase my coding skills and style in C++
+
+
 Manage my projects effectively by organizing solutions to various problems
+
+
 Receive feedback and suggestions from the community to improve my coding practices
+
+
 Increase visibility to potential employers in the tech industry by demonstrating proficiency in C++ programming and problem-solving
+
+
 
 In this repository, you'll find solutions to coding problems covering a wide range of concepts in C++. Some of the concepts I have experience learning and applying include:
 
