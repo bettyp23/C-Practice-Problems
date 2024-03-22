@@ -1,0 +1,51 @@
+/* Name: Betty Phipps
+  2  Date: 01/22/24
+  3 Secion: 8
+  4 Assignment: Assignment#1
+  5 Due Date: 01/22/24
+  6 About this project: Writing a C++ program to design a small application to know if Krusty Krab's pizza is cost effective. The     application will calculate the after-tax cost of pizza per sqaure inch, then show how much each customer has to pay.
+  7 
+  8 All work below was preformed by Betty Phipps */
+  9 
+ 10 #include <iostream>
+ 11 #include <iomanip>
+ 12 using namespace std;
+ 13 
+ 14 int main()
+ 15 {
+ 16         cout << "Welcome to the Krusty Krab pizza ordering system!" << endl; //output statement to the program 
+ 17 
+ 18         double radius, price, taxPercentage, area, totalPrice, costPSI, totalPerCustomer; //declaring the variables. Double fo    r decimals and int for whole numbers
+ 19         int numberOfChecks;
+ 20 
+ 21         // The following cout and cin statement are input and output that will ask for an input for the radius, price, and tax    . Cin will record the input and store it into the variables.
+ 22         cout << "Enter the radius (in inches) of the pizza: ";
+ 23         cin >> radius;
+ 24 
+ 25         cout << "Enter the price (before tax) of the pizza: ";
+ 26         cin >> price;
+ 27 
+ 28         cout << "Enter the tax (percentage): ";
+ 29         cin >> taxPercentage;
+ 30 
+ 31         totalPrice = price + (price * (taxPercentage / 100.0)); //calculating the total price with the data entered
+ 32         area = 3.1415 * radius * radius;
+ 33         costPSI = totalPrice / area;
+ 34 
+ 35         cout << fixed << setprecision(2); // The set precision is telling the computer to only output 2 digits from the total
+ 36         cout << "The cost per square inch is : $ " << costPSI << endl;
+ 37 
+ 38         cout << "Enter the number of checks: "; //statement to receive number of checks from user
+ 39         cin >> numberOfChecks;
+ 40 
+ 41         totalPerCustomer = totalPrice / max(numberOfChecks, 1); // This will calculate the total per customer, the function ma    x with 1 is done to ensure  that the denominator of the divison is at least 1 for the number of checks
+ 42 
+ 43         if (numberOfChecks >= 1)
+ 44         {
+ 45                 cout << "Each person pays $ " <<totalPerCustomer << endl;
+ 46         }
+ 47 
+ 48 
+ 49         return 0;
+ 50 
+ 51 }
