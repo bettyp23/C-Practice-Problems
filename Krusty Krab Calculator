@@ -1,0 +1,42 @@
+///Program will calculate the after-tax cost of pizza per square inch
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    cout << "Welcome to the Krusty Krab pizza ordering system!" << endl; //output statement to the program 
+
+    double radius, price, taxPercentage, area, totalPrice, costPSI, totalPerCustomer; //declaring the variables. Double for decimals and int for whole numbers
+    int numberOfChecks;
+
+    // The following cout and cin statement are input and output that will ask for an input for the radius, price, and tax. Cin will record the input and store it into the variables.
+    cout << "Enter the radius (in inches) of the pizza: ";
+    cin >> radius;
+
+    cout << "Enter the price (before tax) of the pizza: ";
+    cin >> price;
+
+    cout << "Enter the tax (percentage): ";
+    cin >> taxPercentage;
+
+    totalPrice = price + (price * (taxPercentage / 100.0)); //calculating the total price with the data entered
+    area = 3.1415 * radius * radius;
+    costPSI = totalPrice / area;
+
+    cout << fixed << setprecision(2); // The set precision is telling the computer to only output 2 digits from the total
+    cout << "The cost per square inch is : $ " << costPSI << endl;
+
+    cout << "Enter the number of checks: "; //statement to receive number of checks from user
+    cin >> numberOfChecks;
+
+    totalPerCustomer = totalPrice / max(numberOfChecks, 1); // This will calculate the total per customer, the function max with 1 is done to ensure that the denominator of the division is at least 1 for the number of checks
+
+    if (numberOfChecks >= 1)
+    {
+        cout << "Each person pays $ " << totalPerCustomer << endl;
+    }
+
+    return 0;
+}
