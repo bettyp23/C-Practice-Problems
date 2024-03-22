@@ -7,9 +7,15 @@ Receive feedback and suggestions from the community to improve my coding practic
 Increase visibility to potential employers in the tech industry by demonstrating proficiency in C++ programming and problem-solving
 
 In this repository, you'll find solutions to coding problems covering a wide range of concepts in C++. Some of the concepts I have experience learning and applying include:
+
 Data structures (arrays, linked lists, stacks, queues, trees, graphs)
+
 Algorithms (sorting, searching, dynamic programming, recursion)
+
 Object-oriented programming (classes, inheritance, polymorphism)
+
 Standard Template Library (STL) and its containers (vector, set, map, etc.)
+
 File I/O, exception handling, and other language features
+
 Feel free to explore the repository, review the solutions, and provide feedback or suggestions.
